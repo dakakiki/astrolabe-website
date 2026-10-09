@@ -1,0 +1,95 @@
+{
+    "key": "group_astro_trust",
+    "title": "Privacy point",
+    "fields": [
+        {
+            "key": "field_astro_trust_icon",
+            "label": "Icon",
+            "name": "icon",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "user": "Person",
+                "chart": "Chart wheel",
+                "transit": "Transit",
+                "synastry": "Two circles",
+                "sky": "Moon and star",
+                "notes": "Note",
+                "calendar": "Calendar",
+                "payment": "Card",
+                "task": "Checkbox",
+                "clock": "Clock",
+                "shield": "Shield",
+                "lock": "Lock",
+                "phone": "Phone",
+                "download": "Download",
+                "trash": "Bin",
+                "doc": "Document",
+                "chat": "Chat",
+                "folder": "Folder",
+                "sheet": "Spreadsheet",
+                "bank": "Bank",
+                "plus": "Plus"
+            },
+            "default_value": "chart",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_astro_trust_text",
+            "label": "Text",
+            "name": "text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "astro_trust"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1791537873
+}

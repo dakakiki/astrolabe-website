@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'NR'; font-weight: 500; src: url('newsreader-latin-500-normal.woff') format('woff'); }
+body { margin: 0; }
+#w { font-family: 'NR'; font-weight: 500; font-size: 1000px; letter-spacing: 0.005em; white-space: nowrap; font-kerning: normal; position: absolute; left: 0; top: 0; line-height: 1; }
+</style></head><body>
+<span id="w">AstroLabe</span>
+<pre id="out">pending</pre>
+<script>
+document.fonts.load('500 1000px NR').then(() => document.fonts.ready).then(() => {
+  const el = document.getElementById('w');
+  const node = el.firstChild;
+  const base = el.getBoundingClientRect().left;
+  const xs = [];
+  for (let i = 0; i < node.length; i++) {
+    const r = document.createRange();
+    r.setStart(node, i); r.setEnd(node, i + 1);
+    xs.push(r.getBoundingClientRect().left - base);
+  }
+  const loaded = document.fonts.check('500 1000px NR');
+  document.getElementById('out').textContent = JSON.stringify({ text: node.data, size: 1000, x: xs, width: el.getBoundingClientRect().width, loaded });
+});
+</script></body></html>

@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AstroLabe — logo proposal</title>
+        <meta name="robots" content="noindex" />
+        <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.bunny.net" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.bunny.net/css?family=ibm-plex-mono:400,500|inter-tight:400,500,600|newsreader:400,400i,500,500i&display=swap"
+        />
+        <link rel="stylesheet" href="assets/css/site.css" />
+        <script>
+            try {
+                if (localStorage.getItem('astrolabe.site.theme') === 'day') {
+                    document.documentElement.dataset.theme = 'day';
+                }
+            } catch (e) {}
+        </script>
+        <style>
+            /* Brand page only — not part of the site's stylesheet. */
+            .tone-night {
+                --logo-limb: #e5b25c;
+                --logo-brass: #e5b25c;
+                --logo-line: #9aa2ff;
+                --logo-star: #ffffff;
+                --logo-star-sky: #ffffff;
+                --logo-ink: #e8ecf8;
+                background: #090d1b;
+                color: #e8ecf8;
+            }
+            .tone-day {
+                --logo-limb: #a2701f;
+                --logo-brass: #e5b25c;
+                --logo-line: #5a61e0;
+                --logo-star: #2f3a92;
+                --logo-star-sky: #ffffff;
+                --logo-ink: #10182b;
+                background: #f5f6f9;
+                color: #10182b;
+            }
+            .brand-hero {
+                padding: 72px 0 40px;
+            }
+            .brand-hero h1 {
+                font-size: clamp(42px, 5.6vw, 72px);
+                line-height: 1.04;
+                letter-spacing: -0.02em;
+            }
+            .brand-hero p {
+                margin-top: 22px;
+                max-width: 760px;
+                font-size: 18.5px;
+                color: var(--ink-3);
+            }
+            .parts {
+                margin-top: 36px;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 14px;
+            }
+            .part {
+                padding: 16px 18px;
+                border: 1px solid var(--line-soft);
+                border-radius: 12px;
+                background: var(--surface);
+            }
+            .part b {
+                display: block;
+                color: var(--ink);
+                font-family: var(--serif);
+                font-weight: 500;
+                font-size: 19px;
+            }
+            .part span {
+                font-size: 14px;
+                color: var(--ink-3);
+            }
+            .concept {
+                margin-top: 28px;
+                border: 1px solid var(--line);
+                border-radius: 18px;
+                background: var(--surface);
+                overflow: hidden;
+                box-shadow: var(--shadow);
+            }
+            .concept.recommended {
+                border-color: var(--brass);
+                box-shadow: 0 0 0 1px var(--brass) inset, var(--shadow);
+            }
+            .concept-head {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                gap: 8px 16px;
+                padding: 22px 26px 18px;
+                border-bottom: 1px solid var(--line-soft);
+            }
+            .concept-head h2 {
+                font-size: 32px;
+            }
+            .concept-head .letter {
+                font-family: var(--mono);
+                font-size: 13px;
+                color: var(--ink-4);
+            }
+            .concept-head .rec {
+                font-size: 11.5px;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: var(--brass);
+                border: 1px solid var(--brass);
+                border-radius: 999px;
+                padding: 3px 10px;
+            }
+            .concept-head a {
+                margin-left: auto;
+                font-size: 14.5px;
+            }
+            .concept-body {
+                display: grid;
+                grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+            }
+            .tiles {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            }
+            .tile {
+                display: grid;
+                place-items: center;
+                padding: 34px 20px;
+                min-height: 300px;
+            }
+            .tile .big {
+                width: 168px;
+                height: 168px;
+            }
+            .tile .lock {
+                margin-top: 26px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .tile .lock svg {
+                width: 36px;
+                height: 36px;
+            }
+            .tile .lock span {
+                font-family: var(--serif);
+                font-weight: 500;
+                font-size: 26px;
+                letter-spacing: 0.005em;
+            }
+            .concept-info {
+                padding: 26px;
+                border-left: 1px solid var(--line-soft);
+                display: grid;
+                gap: 18px;
+                align-content: start;
+            }
+            .concept-info p {
+                color: var(--ink-2);
+                font-size: 15.5px;
+            }
+            .concept-info h4 {
+                margin: 0 0 6px;
+                font-size: 11.5px;
+                font-weight: 500;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: var(--ink-4);
+            }
+            .proscons {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+                gap: 16px;
+                font-size: 14.5px;
+                color: var(--ink-3);
+            }
+            .proscons ul {
+                margin: 0;
+                padding-left: 18px;
+            }
+            .sizes {
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+            .sizes figure {
+                margin: 0;
+                display: grid;
+                justify-items: center;
+                gap: 6px;
+            }
+            .sizes figcaption {
+                font-family: var(--mono);
+                font-size: 10.5px;
+                color: var(--ink-4);
+            }
+            .sizes img {
+                border-radius: 0;
+            }
+            .swatches {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 12px;
+            }
+            .swatch {
+                border: 1px solid var(--line-soft);
+                border-radius: 12px;
+                overflow: hidden;
+                background: var(--surface);
+            }
+            .swatch .chip-c {
+                height: 74px;
+                border-bottom: 1px solid var(--line-soft);
+            }
+            .swatch div:last-child {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+            .swatch b {
+                display: block;
+                color: var(--ink);
+                font-weight: 500;
+            }
+            .swatch code {
+                font-family: var(--mono);
+                font-size: 12px;
+                color: var(--ink-3);
+            }
+            .swatch small {
+                display: block;
+                color: var(--ink-4);
+                font-size: 12px;
+                margin-top: 2px;
+            }
+            .sub {
+                margin: 34px 0 14px;
+                font-size: 12px;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: var(--ink-4);
+                font-weight: 500;
+            }
+            .type {
+                display: grid;
+                gap: 14px;
+            }
+            .type-row {
+                display: grid;
+                grid-template-columns: 220px minmax(0, 1fr);
+                gap: 24px;
+                align-items: center;
+                padding: 22px 24px;
+                border: 1px solid var(--line-soft);
+                border-radius: 14px;
+                background: var(--surface);
+            }
+            .type-row .meta b {
+                display: block;
+                color: var(--ink);
+                font-weight: 500;
+            }
+            .type-row .meta span {
+                font-size: 13.5px;
+                color: var(--ink-3);
+            }
+            .type-row .sample {
+                color: var(--ink);
+                overflow-wrap: anywhere;
+            }
+            .rules {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 14px;
+            }
+            .rules .part p {
+                margin-top: 6px;
+                font-size: 14.5px;
+                color: var(--ink-3);
+            }
+            .files {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+                gap: 8px 18px;
+                font-family: var(--mono);
+                font-size: 13px;
+            }
+            @media (max-width: 1080px) {
+                .concept-body {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+                .concept-info {
+                    border-left: 0;
+                    border-top: 1px solid var(--line-soft);
+                }
+                .parts,
+                .rules {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+            }
+            @media (max-width: 640px) {
+                .tiles,
+                .proscons,
+                .parts,
+                .rules {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+                .tile {
+                    min-height: 0;
+                }
+                .tile .big {
+                    width: 128px;
+                    height: 128px;
+                }
+                .type-row {
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 10px;
+                }
+                .concept-head a {
+                    margin-left: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- logo-sprite:start -->
+        <svg class="sprite" aria-hidden="true" focusable="false"><symbol id="mark-a" viewBox="0 0 64 64"><defs><radialGradient id="sky-sprite-a" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="var(--logo-sky-1)"/><stop offset="1" stop-color="var(--logo-sky-2)"/></radialGradient></defs><circle cx="32" cy="7.6" r="3.7" fill="none" stroke="var(--logo-limb)" stroke-width="2.2"/><circle cx="32" cy="35" r="22.2" fill="url(#sky-sprite-a)"/><circle cx="32" cy="35" r="23.5" fill="none" stroke="var(--logo-limb)" stroke-width="2.6"/><circle cx="32" cy="31" r="13" fill="none" stroke="var(--logo-brass)" stroke-width="1.7"/><path d="M43.1 15.77L20.9 54.23" stroke="var(--logo-brass)" stroke-width="1.5"/><circle cx="32" cy="35" r="2.3" fill="var(--logo-brass)"/><path d="M40.15 13.88Q41.6 19.43 47.15 20.88Q41.6 22.33 40.15 27.88Q38.7 22.33 33.15 20.88Q38.7 19.43 40.15 13.88Z" fill="var(--logo-star-sky)"/></symbol><symbol id="mark-b" viewBox="0 0 64 64"><circle cx="32" cy="7.6" r="3.7" fill="none" stroke="var(--logo-limb)" stroke-width="2.2"/><circle cx="32" cy="35" r="23.5" fill="none" stroke="var(--logo-limb)" stroke-width="2.6"/><path d="M11.42 43.32A35.84 35.84 0 0 1 52.58 43.32" fill="none" stroke="var(--logo-line)" stroke-width="2.2"/><path d="M16.03 50.42A30.59 30.59 0 0 1 47.97 50.42" fill="none" stroke="var(--logo-line)" stroke-width="1.3" opacity=".55"/><path d="M32 15.5Q33.9 23.1 41.5 25Q33.9 26.9 32 34.5Q30.1 26.9 22.5 25Q30.1 23.1 32 15.5Z" fill="var(--logo-star)"/><circle cx="44.5" cy="29.5" r="1.6" fill="var(--logo-limb)"/></symbol><symbol id="mark-c" viewBox="0 0 64 64"><path d="M30.9 13L33.5 13L17.6 56.6L15 56.6ZM30.6 13L37 13L50.6 56.6L44.1 56.6ZM11.4 56.4H21.4V58.6H11.4ZM40.4 56.4H54.4V58.6H40.4Z" fill="var(--logo-ink)"/><path d="M8 45.5A44.64 44.64 0 0 1 56 45.5" fill="none" stroke="var(--logo-limb)" stroke-width="2.3" stroke-linecap="round"/><path d="M33.2 1.5Q35 8.7 42.2 10.5Q35 12.3 33.2 19.5Q31.4 12.3 24.2 10.5Q31.4 8.7 33.2 1.5Z" fill="var(--logo-line)"/></symbol></svg>
+        <!-- logo-sprite:end -->
+
+        <svg class="sprite" aria-hidden="true" focusable="false">
+            <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4" /></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z" /></symbol>
+        </svg>
+
+        <header class="site-header" id="top">
+            <div class="wrap">
+                <a class="lockup" href="index.html" aria-label="AstroLabe home">
+                    <svg class="mark" aria-hidden="true"><use class="logo-use" href="#mark-a" /></svg>
+                    <span class="word">AstroLabe</span>
+                </a>
+                <div class="header-actions">
+                    <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch between night and day">
+                        <svg class="theme-night-icon" aria-hidden="true"><use href="#i-sun" /></svg>
+                        <svg class="theme-day-icon" aria-hidden="true"><use href="#i-moon" /></svg>
+                    </button>
+                    <a class="btn btn-sm" href="index.html">← Back to the site</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="brand-hero">
+                <div class="wrap">
+                    <div class="eyebrow">Logo proposal · October 2026</div>
+                    <h1>The name is <em>an instrument.</em></h1>
+                    <p>
+                        For two thousand years the astrolabe was how astronomers and astrologers found where the stars
+                        stood for a given moment and place — exactly what AstroLabe does for every client. The marks below
+                        borrow its parts, in the app's own colours: starlight blue for the sky, old brass for the
+                        instrument.
+                    </p>
+                    <div class="parts">
+                        <div class="part"><b>Shackle</b><span>The ring the instrument hangs from — what makes a circle read as an astrolabe, not a planet or a clock.</span></div>
+                        <div class="part"><b>Limb</b><span>The brass rim with its degree scale.</span></div>
+                        <div class="part"><b>Rete</b><span>The star map on top: an off-centre ecliptic ring and pointed star markers.</span></div>
+                        <div class="part"><b>Rule</b><span>The bar turned to sight a star or read a time.</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-tight" style="padding-top: 24px">
+                <div class="wrap">
+                    <!-- A -->
+                    <article class="concept recommended">
+                        <div class="concept-head">
+                            <span class="letter">A</span>
+                            <h2>Rete</h2>
+                            <span class="rec">Chosen · 9 Oct 2026</span>
+                            <a href="index.html?logo=a">See it on the site →</a>
+                        </div>
+                        <div class="concept-body">
+                            <div class="tiles">
+                                <div class="tile tone-night">
+                                    <div>
+                                        <svg class="big" aria-label="Concept A on night"><use href="#mark-a" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-a" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                                <div class="tile tone-day">
+                                    <div>
+                                        <svg class="big" aria-label="Concept A on day"><use href="#mark-a" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-a" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="concept-info">
+                                <p>
+                                    A night-sky disc in a brass limb. The off-centre ring is the ecliptic of a real rete; the
+                                    rule crosses it exactly where the star sits — sighting a star, the way a chart is read.
+                                    It grows directly out of the glowing ✷ disc the app already uses in its sidebar.
+                                </p>
+                                <div class="proscons">
+                                    <div>
+                                        <h4>Strong</h4>
+                                        <ul>
+                                            <li>Unmistakably an astrolabe</li>
+                                            <li>Filled disc stays legible at 16 px</li>
+                                            <li>Continuity with the app</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Watch</h4>
+                                        <ul>
+                                            <li>Most detailed of the three</li>
+                                            <li>Needs the simplified favicon below 24 px</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Sizes · app icon · favicon</h4>
+                                    <div class="sizes">
+                                        <figure><svg width="64" height="64"><use href="#mark-a" /></svg><figcaption>64</figcaption></figure>
+                                        <figure><svg width="32" height="32"><use href="#mark-a" /></svg><figcaption>32</figcaption></figure>
+                                        <figure><svg width="24" height="24"><use href="#mark-a" /></svg><figcaption>24</figcaption></figure>
+                                        <figure><img src="assets/logo/astrolabe-a-icon.svg" width="64" height="64" alt="App icon A" /><figcaption>icon</figcaption></figure>
+                                        <figure><img src="assets/logo/favicon.svg" width="32" height="32" alt="Favicon" /><figcaption>fav 32</figcaption></figure>
+                                        <figure><img src="assets/logo/favicon.svg" width="16" height="16" alt="Favicon at 16 pixels" /><figcaption>fav 16</figcaption></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- B -->
+                    <article class="concept">
+                        <div class="concept-head">
+                            <span class="letter">B</span>
+                            <h2>Ascendant</h2>
+                            <a href="index.html?logo=b">See it on the site →</a>
+                        </div>
+                        <div class="concept-body">
+                            <div class="tiles">
+                                <div class="tile tone-night">
+                                    <div>
+                                        <svg class="big" aria-label="Concept B on night"><use href="#mark-b" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-b" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                                <div class="tile tone-day">
+                                    <div>
+                                        <svg class="big" aria-label="Concept B on day"><use href="#mark-b" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-b" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="concept-info">
+                                <p>
+                                    The same instrument outline, with the horizon arcs of its plate and a star rising over
+                                    them — the Ascendant, the first thing an astrologer looks for. A brass point marks a
+                                    planet. Calmer and more open than A.
+                                </p>
+                                <div class="proscons">
+                                    <div>
+                                        <h4>Strong</h4>
+                                        <ul>
+                                            <li>Simple, light, modern</li>
+                                            <li>Clear meaning for astrologers</li>
+                                            <li>Easy to embroider, engrave, stamp</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Watch</h4>
+                                        <ul>
+                                            <li>Outline only — thinner presence when small</li>
+                                            <li>“Star over horizon” is a common motif</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Sizes · app icon</h4>
+                                    <div class="sizes">
+                                        <figure><svg width="64" height="64"><use href="#mark-b" /></svg><figcaption>64</figcaption></figure>
+                                        <figure><svg width="32" height="32"><use href="#mark-b" /></svg><figcaption>32</figcaption></figure>
+                                        <figure><svg width="24" height="24"><use href="#mark-b" /></svg><figcaption>24</figcaption></figure>
+                                        <figure><svg width="16" height="16"><use href="#mark-b" /></svg><figcaption>16</figcaption></figure>
+                                        <figure><img src="assets/logo/astrolabe-b-icon.svg" width="64" height="64" alt="App icon B" /><figcaption>icon</figcaption></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- C -->
+                    <article class="concept">
+                        <div class="concept-head">
+                            <span class="letter">C</span>
+                            <h2>Monogram</h2>
+                            <a href="index.html?logo=c">See it on the site →</a>
+                        </div>
+                        <div class="concept-body">
+                            <div class="tiles">
+                                <div class="tile tone-night">
+                                    <div>
+                                        <svg class="big" aria-label="Concept C on night"><use href="#mark-c" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-c" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                                <div class="tile tone-day">
+                                    <div>
+                                        <svg class="big" aria-label="Concept C on day"><use href="#mark-c" /></svg>
+                                        <div class="lock"><svg aria-hidden="true"><use href="#mark-c" /></svg><span>AstroLabe</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="concept-info">
+                                <p>
+                                    A serif “A” with the contrast of the Newsreader headings: a star for its apex and a
+                                    brass horizon for its crossbar. Typographic and quiet — it leans on the name rather than
+                                    the instrument.
+                                </p>
+                                <div class="proscons">
+                                    <div>
+                                        <h4>Strong</h4>
+                                        <ul>
+                                            <li>Pairs naturally with the wordmark</li>
+                                            <li>Elegant at large sizes</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Watch</h4>
+                                        <ul>
+                                            <li>Says less about astrology</li>
+                                            <li>Thin left stroke fades below 24 px</li>
+                                            <li>Letter-with-a-star marks are common</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Sizes · app icon</h4>
+                                    <div class="sizes">
+                                        <figure><svg width="64" height="64"><use href="#mark-c" /></svg><figcaption>64</figcaption></figure>
+                                        <figure><svg width="32" height="32"><use href="#mark-c" /></svg><figcaption>32</figcaption></figure>
+                                        <figure><svg width="24" height="24"><use href="#mark-c" /></svg><figcaption>24</figcaption></figure>
+                                        <figure><svg width="16" height="16"><use href="#mark-c" /></svg><figcaption>16</figcaption></figure>
+                                        <figure><img src="assets/logo/astrolabe-c-icon.svg" width="64" height="64" alt="App icon C" /><figcaption>icon</figcaption></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Colours -->
+            <section class="section-tight">
+                <div class="wrap">
+                    <div class="eyebrow">Colour</div>
+                    <h2 style="font-size: clamp(32px, 4vw, 46px)">Taken from the app, <em>unchanged.</em></h2>
+                    <p style="margin-top: 14px; color: var(--ink-3); max-width: 680px">
+                        Every value comes from <span class="mono">resources/css/tokens.css</span>. Night is the default, as in
+                        the app; day is the same design on paper.
+                    </p>
+
+                    <div class="sub">Night</div>
+                    <div class="swatches">
+                        <div class="swatch"><div class="chip-c" style="background: #090d1b"></div><div><b>Night sky</b><code>#090D1B</code><small>Page background</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #131a2e"></div><div><b>Surface</b><code>#131A2E</code><small>Cards</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #5a61e0"></div><div><b>Starlight</b><code>#5A61E0</code><small>Brand, buttons</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #9aa2ff"></div><div><b>Starlight soft</b><code>#9AA2FF</code><small>Accents, italics</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #e5b25c"></div><div><b>Brass</b><code>#E5B25C</code><small>Instrument, labels</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #e8ecf8"></div><div><b>Ink</b><code>#E8ECF8</code><small>Headings, text</small></div></div>
+                    </div>
+
+                    <div class="sub">Day</div>
+                    <div class="swatches">
+                        <div class="swatch"><div class="chip-c" style="background: #eef0f5"></div><div><b>Paper</b><code>#EEF0F5</code><small>Page background</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #ffffff"></div><div><b>Surface</b><code>#FFFFFF</code><small>Cards</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #3b46a8"></div><div><b>Starlight</b><code>#3B46A8</code><small>Brand, buttons</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #a2701f"></div><div><b>Brass</b><code>#A2701F</code><small>Instrument, labels</small></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #10182b"></div><div><b>Ink</b><code>#10182B</code><small>Headings, text</small></div></div>
+                    </div>
+
+                    <div class="sub">Elements (chart glyphs)</div>
+                    <div class="swatches">
+                        <div class="swatch"><div class="chip-c" style="background: #e08a72"></div><div><b>Fire</b><code>#E08A72</code></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #a3c27a"></div><div><b>Earth</b><code>#A3C27A</code></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #7fb6f5"></div><div><b>Air</b><code>#7FB6F5</code></div></div>
+                        <div class="swatch"><div class="chip-c" style="background: #a79bf0"></div><div><b>Water</b><code>#A79BF0</code></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Type -->
+            <section class="section-tight">
+                <div class="wrap">
+                    <div class="eyebrow">Type</div>
+                    <h2 style="font-size: clamp(32px, 4vw, 46px)">Three faces, <em>all from the app.</em></h2>
+                    <p style="margin-top: 14px; color: var(--ink-3); max-width: 680px">
+                        All three are open-source (SIL Open Font License) and served by Bunny Fonts — EU-based, no cookies or
+                        tracking — the same way the app loads them.
+                    </p>
+                    <div class="type" style="margin-top: 28px">
+                        <div class="type-row">
+                            <div class="meta"><b>Newsreader</b><span>Wordmark, headings, notes · 400, 500, italic</span></div>
+                            <div class="sample" style="font-family: var(--serif); font-size: 44px; line-height: 1.1">AstroLabe — <em style="color: var(--accent-text)">see everything.</em></div>
+                        </div>
+                        <div class="type-row">
+                            <div class="meta"><b>Inter Tight</b><span>Interface and body text · 400, 500, 600</span></div>
+                            <div class="sample" style="font-family: var(--sans); font-size: 20px">Birth data, charts, consultations, notes, appointments and payments.</div>
+                        </div>
+                        <div class="type-row">
+                            <div class="meta"><b>IBM Plex Mono</b><span>Degrees, times, numbers · 400, 500</span></div>
+                            <div class="sample" style="font-family: var(--mono); font-size: 18px">☉ 23°20′ ♉ · ASC 18°04′ ♎ · 16:20 Europe/Belgrade</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Usage -->
+            <section class="section-tight">
+                <div class="wrap">
+                    <div class="eyebrow">Using the mark</div>
+                    <div class="rules" style="margin-top: 8px">
+                        <div class="part"><b>Clear space</b><p>Keep free space around the mark equal to the shackle ring's height on every side.</p></div>
+                        <div class="part"><b>Smallest size</b><p>24 px for the full mark; below that, the simplified favicon on its night tile.</p></div>
+                        <div class="part"><b>Colour</b><p>Night version on dark, day version on light, one-colour version for print, stamps and engraving.</p></div>
+                        <div class="part"><b>Wordmark</b><p>“AstroLabe” in Newsreader Medium, with the capital L — as in the app's name.</p></div>
+                        <div class="part"><b>Don't</b><p>Recolour the star, rotate the rule, add effects or place the night version on a light photo.</p></div>
+                        <div class="part"><b>Done · 9 Oct 2026</b><p>Outlined wordmark and lockups, favicon.ico and app icons, and the mark in the app (sidebar, sign-in, legal pages). Still to do: social images.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Files -->
+            <section class="section-tight" style="padding-bottom: 96px">
+                <div class="wrap">
+                    <div class="eyebrow">Files</div>
+                    <ul class="files" style="margin-top: 8px">
+                        <li><a href="assets/logo/astrolabe-a-night.svg">astrolabe-a-night.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-a-day.svg">astrolabe-a-day.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-a-mono.svg">astrolabe-a-mono.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-a-icon.svg">astrolabe-a-icon.svg</a></li>
+                        <li><a href="assets/logo/favicon.svg">favicon.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-lockup-night.svg">astrolabe-lockup-night.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-lockup-day.svg">astrolabe-lockup-day.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-lockup-mono.svg">astrolabe-lockup-mono.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-wordmark-night.svg">astrolabe-wordmark-night.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-wordmark-day.svg">astrolabe-wordmark-day.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-wordmark-mono.svg">astrolabe-wordmark-mono.svg</a></li>
+                        <li><a href="assets/logo/favicon.ico">favicon.ico</a></li>
+                        <li><a href="assets/logo/apple-touch-icon.png">apple-touch-icon.png</a></li>
+                        <li><a href="assets/logo/astrolabe-icon-192.png">astrolabe-icon-192.png</a></li>
+                        <li><a href="assets/logo/astrolabe-icon-512.png">astrolabe-icon-512.png</a></li>
+                        <li><a href="assets/logo/astrolabe-b-night.svg">astrolabe-b-night.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-b-day.svg">astrolabe-b-day.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-b-mono.svg">astrolabe-b-mono.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-b-icon.svg">astrolabe-b-icon.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-c-night.svg">astrolabe-c-night.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-c-day.svg">astrolabe-c-day.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-c-mono.svg">astrolabe-c-mono.svg</a></li>
+                        <li><a href="assets/logo/astrolabe-c-icon.svg">astrolabe-c-icon.svg</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <script src="assets/js/site.js"></script>
+    </body>
+</html>

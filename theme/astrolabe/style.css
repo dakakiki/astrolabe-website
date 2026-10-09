@@ -1,0 +1,15 @@
+/*
+Theme Name: AstroLabe
+Theme URI: https://astrolabe.online
+Author: AstroLabe
+Description: Presentation site for AstroLabe — practice management for professional astrologers. Night and day themes with the same design tokens and fonts as the app. Section texts via ACF (free), repeating items under Site content, beta requests stored privately in this site.
+Version: 0.1.0
+Requires at least: 6.5
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astrolabe
+Update URI: false
+*/
+
+/* The styles are in assets/css/site.css (loaded by inc/setup.php). */

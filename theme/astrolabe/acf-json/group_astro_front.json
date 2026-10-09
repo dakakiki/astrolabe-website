@@ -1,0 +1,1264 @@
+{
+    "key": "group_astro_front",
+    "title": "Front page sections",
+    "fields": [
+        {
+            "key": "field_astro_front_intro",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Leave a field empty to keep the default text (shown as the placeholder).",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_astro_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_hero",
+            "label": "Hero",
+            "name": "hero",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_hero_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "For professional astrologers",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_hero_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Open a client. <em>See everything.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_hero_lede",
+                    "label": "Intro",
+                    "name": "lede",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Birth data, the natal chart, today's transits, past consultations, notes, files, payments and what comes next — together in one workspace, so you start every reading prepared.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_hero_cta_primary",
+                    "label": "Main button",
+                    "name": "cta_primary",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Request a beta invite",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_hero_cta_secondary",
+                    "label": "Second button",
+                    "name": "cta_secondary",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "See what's inside",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_hero_notes",
+                    "label": "Small notes under the buttons",
+                    "name": "notes",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "One per line.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Free during the closed beta\nNo card needed\nHosted in the EU",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_problem",
+            "label": "Why",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_problem",
+            "label": "Why",
+            "name": "problem",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_problem_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Why AstroLabe",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_problem_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Seven places <em>for one client.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_problem_text_1",
+                    "label": "First paragraph",
+                    "name": "text_1",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Messages in a chat app, the appointment in a calendar, notes in a document, payments in a spreadsheet, the chart in desktop software and the recording somewhere in a cloud folder.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_problem_text_2",
+                    "label": "Second paragraph",
+                    "name": "text_2",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "<strong>…<\/strong> for the bold start.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "<strong>AstroLabe keeps all of it on the client<\/strong> — so getting ready for a consultation takes a minute, not twenty, and nothing you promised falls through the cracks.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_features",
+            "label": "Features",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_features",
+            "label": "Features",
+            "name": "features",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_features_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Everything a consultation touches",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_features_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Your practice and your charts, <em>in the same place.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_features_lede",
+                    "label": "Intro",
+                    "name": "lede",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "The features themselves: Site content → Features.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Not a generic CRM with astrology bolted on — every screen is built around how readings actually happen.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_charts",
+            "label": "Charts",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_charts",
+            "label": "Charts",
+            "name": "charts",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_charts_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Serious about the sky",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_charts_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Charts you can <em>put your name to.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_story",
+            "label": "Timeline",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_story",
+            "label": "Timeline",
+            "name": "story",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_story_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "One client, the whole story",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_story_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Pick up exactly <em>where you left off.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_story_text",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Every reading, note, payment, file and follow-up lands on the client's timeline in order. Before the next session you scroll once and you are back where you left off — including what the sky is doing to their chart right now.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_privacy",
+            "label": "Privacy",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_privacy",
+            "label": "Privacy",
+            "name": "privacy",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_privacy_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Privacy & security",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_privacy_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Your clients trust you with their birth data. <em>We treat it that way.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_privacy_lede",
+                    "label": "Intro",
+                    "name": "lede",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "The points themselves: Site content → Privacy points.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Birth details, notes and files are handled with the care you would give health records — in how they are stored, logged and exported.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_pricing",
+            "label": "Pricing",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_pricing",
+            "label": "Pricing",
+            "name": "pricing",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_pricing_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Pricing",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_pricing_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Free while we <em>build it with you.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_pricing_lede",
+                    "label": "Intro",
+                    "name": "lede",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "The plans themselves: Site content → Plans.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "AstroLabe is in a closed beta with a small group of working astrologers. Paid plans start after the beta.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_pricing_banner_title",
+                    "label": "Beta banner — title",
+                    "name": "banner_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Closed beta — free, no card",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_pricing_banner_text",
+                    "label": "Beta banner — text",
+                    "name": "banner_text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Use it with your real practice, tell us what is missing, and hear about plans before anyone else.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_pricing_banner_cta",
+                    "label": "Beta banner — button",
+                    "name": "banner_cta",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Request an invite",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_pricing_note",
+                    "label": "Note under the plans",
+                    "name": "note",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Indicative prices — confirmed with beta members before paid plans open. Every plan will start with a 14-day free trial.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_beta",
+            "label": "Beta form",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_beta",
+            "label": "Beta form",
+            "name": "beta",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_beta_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Closed beta",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_beta_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Help shape the tool <em>you will work in.<\/em>",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_beta_text",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "We are inviting a small number of astrologers who see clients regularly. Tell us a little about your practice.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_beta_steps",
+                    "label": "Steps",
+                    "name": "steps",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "One per line.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "We read every request and reply personally, usually within a few days.\nYou get an invitation link to create your practice — free for the whole beta.\nA short call now and then, if you like: what works, what is missing, what is in the way.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_beta_submit",
+                    "label": "Button",
+                    "name": "submit",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Request an invite",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_beta_done_title",
+                    "label": "After sending — title",
+                    "name": "done_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Thank you — request received.",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_beta_done_text",
+                    "label": "After sending — text",
+                    "name": "done_text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "We will write to you personally, usually within a few days.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_faq",
+            "label": "Questions",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_faq",
+            "label": "Questions",
+            "name": "faq",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_faq_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Questions",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_faq_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "The questions themselves: Site content → Questions.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Good to know",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_astro_tab_closing",
+            "label": "Closing",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_astro_closing",
+            "label": "Closing",
+            "name": "closing",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_astro_closing_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Wrap the italic accent in <em>…<\/em>. <br> for a line break.",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Every client, <em>every chart,<\/em><br>in one place.",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_astro_closing_text",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Join the closed beta and run your practice from a workspace made for astrologers.",
+                    "rows": 3,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_astro_closing_cta",
+                    "label": "Button",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Request a beta invite",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "featured_image"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1791537873
+}

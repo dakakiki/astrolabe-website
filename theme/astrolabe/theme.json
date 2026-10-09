@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": false,
+		"layout": {
+			"contentSize": "720px",
+			"wideSize": "1180px"
+		},
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{ "slug": "starlight", "name": "Starlight", "color": "var(--link)" },
+				{ "slug": "brass", "name": "Brass", "color": "var(--brass)" },
+				{ "slug": "ink", "name": "Ink", "color": "var(--ink)" },
+				{ "slug": "ink-soft", "name": "Ink soft", "color": "var(--ink-2)" }
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"fontFamilies": [
+				{ "slug": "sans", "name": "Inter Tight", "fontFamily": "var(--sans)" },
+				{ "slug": "serif", "name": "Newsreader", "fontFamily": "var(--serif)" },
+				{ "slug": "mono", "name": "IBM Plex Mono", "fontFamily": "var(--mono)" }
+			]
+		}
+	}
+}

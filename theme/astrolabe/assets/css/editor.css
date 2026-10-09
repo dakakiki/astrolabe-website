@@ -1,0 +1,52 @@
+/* Block editor: plain pages written the way they will read on the site (day colours). */
+:root {
+    --ink: #10182b;
+    --ink-2: #3b475f;
+    --line: #dfe3ea;
+    --brass: #a2701f;
+    --link: #3b46a8;
+    --serif: 'Newsreader', Georgia, serif;
+    --sans: 'Inter Tight', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+body {
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink-2);
+}
+
+h1,
+h2,
+h3,
+.editor-post-title__input {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+a {
+    color: var(--link);
+}
+
+blockquote {
+    border-left: 2px solid var(--brass);
+    padding-left: 18px;
+    font-family: var(--serif);
+    font-style: italic;
+}
+
+code {
+    font-family: var(--mono);
+}

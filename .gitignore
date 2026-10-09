@@ -1,0 +1,16 @@
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Font files are downloaded only to rebuild the wordmark (see prototype/tools/wordmark/README.md)
+*.woff
+*.woff2
+*.ttf
+*.otf
+prototype/tools/wordmark/positions.json
+prototype/tools/wordmark/out.json
+
+node_modules/
