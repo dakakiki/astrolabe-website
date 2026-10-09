@@ -26,7 +26,7 @@ Statičan prototip sajta `astrolabe.online` i predlog logotipa. Bez servera i bu
 - **Cene:** prikazane kao *planirane* (19 / 29 / 49 EUR iz doc 07) uz napomenu da se potvrđuju posle bete; bez liste funkcija po paketu, jer granice paketa nisu odlučene.
 - **Tvrdnje na sajtu** su samo ono što aplikacija već radi (Faze 4–8c2), plus „Hosted in the EU“ (potvrđeno 9. 10. 2026).
 - **Swiss Ephemeris** je pomenut samo imenom (dozvoljeno ugovorom); izdavač i autori biblioteke se ne pominju (tačka 9 ugovora).
-- **Uzorak karte** (Ana Marković, maj 1991, Novi Sad) je izmišljen; položaji su zaokružene ilustracije, ne proračun.
+- **Uzorak karte** (Emma Clarke, maj 1991, Bristol) je izmišljen; položaji su zaokružene ilustracije, ne proračun.
 - **Nazivi alata** u sekciji „sedam mesta“ su opšti (chat, kalendar, tabela…), bez tuđih robnih marki.
 
 ## Odlučeno 9. 10. 2026

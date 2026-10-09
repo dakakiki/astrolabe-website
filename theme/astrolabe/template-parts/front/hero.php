@@ -32,14 +32,14 @@ $vs = '&#xFE0E;'; // text form of a symbol, never an emoji
 			<figure class="mock" aria-label="<?php esc_attr_e( 'AstroLabe client profile, with the natal chart and what is coming up', 'astrolabe' ); ?>">
 				<div class="mock-bar">
 					<?php echo astrolabe_mark(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					<span class="crumb">Clients / <b>Ana Marković</b></span>
-					<span class="tz">Europe/Belgrade · 10:24</span>
+					<span class="crumb">Clients / <b>Emma Clarke</b></span>
+					<span class="tz">Europe/London · 10:24</span>
 				</div>
 				<div class="mock-head">
-					<div class="avatar" aria-hidden="true">AM</div>
+					<div class="avatar" aria-hidden="true">EC</div>
 					<div class="who">
-						<b>Ana Marković</b>
-						<span>Born May 1991 · 16:20 · Novi Sad</span>
+						<b>Emma Clarke</b>
+						<span>Born May 1991 · 16:20 · Bristol</span>
 					</div>
 					<div class="chips">
 						<span class="chip"><span class="glyph">☉<?php echo $vs; // phpcs:ignore ?></span> 23° Taurus</span>
