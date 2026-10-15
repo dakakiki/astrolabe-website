@@ -124,7 +124,7 @@ function astrolabe_defaults(): array {
 			),
 			array(
 				'title'  => 'Can my clients sign in?',
-				'answer' => '<p>Not yet. AstroLabe is your private workspace; clients never see it. A client portal with online booking is planned after the beta.</p>',
+				'answer' => '<p>Yes, when you invite them. Each invited client gets a private client portal with your practice’s name, logo and colour. They sign in with a link or a code sent to their email — no password — and see their appointments and the notes and files you choose to share.</p><p>They can also book, move or cancel appointments within your rules: your working hours and time off, how much notice you need and until when changes are allowed. You can confirm each booking yourself. Your workspace stays private; clients never see your notes or anyone else.</p>',
 			),
 			array(
 				'title'  => 'What happens to my data if I leave?',
