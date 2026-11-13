@@ -1,7 +1,6 @@
 // AstroLabe presentation site.
 // Theme memory, the mobile menu, the decorative wheels and the sample chart
-// (drawn like the app's ChartWheel), and checks on the beta form before it
-// is sent to the server.
+// (drawn like the app's ChartWheel).
 (function () {
     'use strict';
 
@@ -241,31 +240,4 @@
     if (hero) drawWheel(hero, { compact: true });
     const spot = document.getElementById('spot-wheel');
     if (spot) drawWheel(spot, { outer: TRANSITS });
-
-    /* ---------- Beta form ----------
-       Checked here first; the server (inc/beta-requests.php) checks again
-       and comes back to #beta with ?beta=thanks or an error code. */
-    const form = document.getElementById('beta-form');
-    if (form) {
-        const field = (name) => form.elements.namedItem(name);
-        const error = form.querySelector('.form-error');
-        form.addEventListener('submit', (event) => {
-            const problems = [];
-            if (!field('name').value.trim()) problems.push('your name');
-            if (!field('email').value.trim() || !field('email').validity.valid) problems.push('a valid email');
-            if (!field('consent').checked) problems.push('your consent to be emailed');
-            if (problems.length) {
-                event.preventDefault();
-                error.textContent = 'Please add ' + problems.join(', ') + '.';
-                error.hidden = false;
-                return;
-            }
-            error.hidden = true;
-            form.querySelector('button[type=submit]').disabled = true;
-        });
-        // Coming back with the browser's Back button: the button works again.
-        window.addEventListener('pageshow', () => (form.querySelector('button[type=submit]').disabled = false));
-    }
-    const done = document.querySelector('.form-done:not([hidden])');
-    if (done) done.focus({ preventScroll: true });
 })();

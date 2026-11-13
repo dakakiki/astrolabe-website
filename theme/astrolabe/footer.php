@@ -34,7 +34,7 @@ $astrolabe_email = astrolabe_setting( 'contact_email' );
 					<h4><?php esc_html_e( 'Account', 'astrolabe' ); ?></h4>
 					<ul>
 						<li><a href="<?php echo esc_url( astrolabe_app_url() ); ?>"><?php esc_html_e( 'Sign in', 'astrolabe' ); ?></a></li>
-						<li><a href="<?php echo esc_url( astrolabe_anchor( 'beta' ) ); ?>"><?php esc_html_e( 'Request an invite', 'astrolabe' ); ?></a></li>
+						<li><a href="<?php echo esc_url( astrolabe_signup_url() ); ?>"><?php esc_html_e( 'Start free trial', 'astrolabe' ); ?></a></li>
 						<?php if ( $astrolabe_email ) : ?>
 							<li><a href="<?php echo esc_url( 'mailto:' . $astrolabe_email ); ?>"><?php echo esc_html( $astrolabe_email ); ?></a></li>
 						<?php endif; ?>

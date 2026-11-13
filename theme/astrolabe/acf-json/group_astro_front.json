@@ -132,7 +132,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Request a beta invite",
+                    "placeholder": "Start your free trial",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -176,7 +176,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Free during the closed beta\nNo card needed\nHosted in the EU",
+                    "placeholder": "14 days free\nNo card needed\nHosted in the EU",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
@@ -754,7 +754,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Free while we <em>build it with you.<\/em>",
+                    "placeholder": "Try it first. <em>Then choose a plan.<\/em>",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -776,7 +776,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "AstroLabe is in a closed beta with a small group of working astrologers. Paid plans start after the beta.",
+                    "placeholder": "Every practice starts with 14 free days. Nothing is charged unless you choose a plan.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
@@ -784,7 +784,7 @@
                 },
                 {
                     "key": "field_astro_pricing_banner_title",
-                    "label": "Beta banner — title",
+                    "label": "Trial banner — title",
                     "name": "banner_title",
                     "aria-label": "",
                     "type": "text",
@@ -796,7 +796,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Closed beta — free, no card",
+                    "placeholder": "14-day free trial — no card",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -806,7 +806,7 @@
                 },
                 {
                     "key": "field_astro_pricing_banner_text",
-                    "label": "Beta banner — text",
+                    "label": "Trial banner — text",
                     "name": "banner_text",
                     "aria-label": "",
                     "type": "textarea",
@@ -818,7 +818,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Use it with your real practice, tell us what is missing, and hear about plans before anyone else.",
+                    "placeholder": "Work with up to 5 clients and see whether AstroLabe fits the way you work.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
@@ -826,7 +826,7 @@
                 },
                 {
                     "key": "field_astro_pricing_banner_cta",
-                    "label": "Beta banner — button",
+                    "label": "Trial banner — button",
                     "name": "banner_cta",
                     "aria-label": "",
                     "type": "text",
@@ -838,7 +838,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Request an invite",
+                    "placeholder": "Start your free trial",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -860,7 +860,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Indicative prices — confirmed with beta members before paid plans open. Every plan will start with a 14-day free trial.",
+                    "placeholder": "Prices in euros. Monthly or yearly — the yearly plan costs about ten months.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
@@ -869,8 +869,8 @@
             ]
         },
         {
-            "key": "field_astro_tab_beta",
-            "label": "Beta form",
+            "key": "field_astro_tab_trial",
+            "label": "Free trial",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -887,9 +887,9 @@
             "selected": 0
         },
         {
-            "key": "field_astro_beta",
-            "label": "Beta form",
-            "name": "beta",
+            "key": "field_astro_trial",
+            "label": "Free trial",
+            "name": "trial",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -903,7 +903,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_astro_beta_eyebrow",
+                    "key": "field_astro_trial_eyebrow",
                     "label": "Eyebrow",
                     "name": "eyebrow",
                     "aria-label": "",
@@ -916,7 +916,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Closed beta",
+                    "placeholder": "Free trial",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -925,7 +925,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_astro_beta_title",
+                    "key": "field_astro_trial_title",
                     "label": "Title",
                     "name": "title",
                     "aria-label": "",
@@ -938,7 +938,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Help shape the tool <em>you will work in.<\/em>",
+                    "placeholder": "Try it with <em>your own practice.<\/em>",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -947,7 +947,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_astro_beta_text",
+                    "key": "field_astro_trial_text",
                     "label": "Text",
                     "name": "text",
                     "aria-label": "",
@@ -960,14 +960,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "We are inviting a small number of astrologers who see clients regularly. Tell us a little about your practice.",
+                    "placeholder": "Create an account in a minute and work with AstroLabe for 14 days. No card, nothing to install.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_astro_beta_steps",
+                    "key": "field_astro_trial_steps",
                     "label": "Steps",
                     "name": "steps",
                     "aria-label": "",
@@ -980,16 +980,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "We read every request and reply personally, usually within a few days.\nYou get an invitation link to create your practice — free for the whole beta.\nA short call now and then, if you like: what works, what is missing, what is in the way.",
+                    "placeholder": "Create your account with your email and a password, then confirm the address.\nFor 14 days, add up to 5 clients and work with their charts, transits, consultations, notes, calendar and payments.\nChoose a plan to carry on with everything you entered. Without one, nothing is charged: your practice stays readable and you can export all of it.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_astro_beta_submit",
-                    "label": "Button",
-                    "name": "submit",
+                    "key": "field_astro_trial_card_title",
+                    "label": "Card — title",
+                    "name": "card_title",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -1000,7 +1000,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Request an invite",
+                    "placeholder": "14 days, free",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -1009,34 +1009,12 @@
                     "append": ""
                 },
                 {
-                    "key": "field_astro_beta_done_title",
-                    "label": "After sending — title",
-                    "name": "done_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": false,
-                    "conditional_logic": false,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "placeholder": "Thank you — request received.",
-                    "rows": null,
-                    "new_lines": "",
-                    "default_value": "",
-                    "maxlength": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_astro_beta_done_text",
-                    "label": "After sending — text",
-                    "name": "done_text",
+                    "key": "field_astro_trial_facts",
+                    "label": "Card — facts",
+                    "name": "facts",
                     "aria-label": "",
                     "type": "textarea",
-                    "instructions": "",
+                    "instructions": "One per line. Keep them true to the trial rules in the app.",
                     "required": false,
                     "conditional_logic": false,
                     "wrapper": {
@@ -1044,11 +1022,33 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "We will write to you personally, usually within a few days.",
+                    "placeholder": "No card needed\nUp to 5 clients\nUp to 30 chart calculations a day\nClient portal and chart snapshots come with a plan",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_astro_trial_cta",
+                    "label": "Button",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "The button opens the app’s registration (Customizer → AstroLabe → App address + \/register).",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Start your free trial",
+                    "rows": null,
+                    "new_lines": "",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -1202,7 +1202,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Join the closed beta and run your practice from a workspace made for astrologers.",
+                    "placeholder": "Start a free 14-day trial and run your practice from a workspace made for astrologers.",
                     "rows": 3,
                     "new_lines": "",
                     "default_value": "",
@@ -1222,7 +1222,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "placeholder": "Request a beta invite",
+                    "placeholder": "Start your free trial",
                     "rows": null,
                     "new_lines": "",
                     "default_value": "",
@@ -1260,5 +1260,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1791537873
+    "modified": 1794578474
 }

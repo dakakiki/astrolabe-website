@@ -17,7 +17,7 @@ $vs = '&#xFE0E;'; // text form of a symbol, never an emoji
 			<h1><?php echo astrolabe_inline( $s['title'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h1>
 			<p class="lede"><?php echo esc_html( $s['lede'] ); ?></p>
 			<div class="hero-cta">
-				<a class="btn btn-primary" href="#beta"><?php echo esc_html( $s['cta_primary'] ); ?></a>
+				<a class="btn btn-primary" href="<?php echo esc_url( astrolabe_signup_url() ); ?>"><?php echo esc_html( $s['cta_primary'] ); ?></a>
 				<a class="btn" href="#features"><?php echo esc_html( $s['cta_secondary'] ); ?></a>
 			</div>
 			<ul class="hero-notes">

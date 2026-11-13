@@ -112,11 +112,10 @@ add_action(
 		);
 
 		$fields = array(
-			'app_url'        => array( __( 'App address', 'astrolabe' ), 'url', 'esc_url_raw', 'https://app.astrolabe.online', __( 'Sign in and the Terms / DPA links point here.', 'astrolabe' ) ),
-			'contact_email'  => array( __( 'Contact email', 'astrolabe' ), 'email', 'sanitize_email', 'hello@astrolabe.online', __( 'Shown in the footer.', 'astrolabe' ) ),
-			'business'       => array( __( 'Business name (footer)', 'astrolabe' ), 'text', 'sanitize_text_field', '[Business name], Serbia', '' ),
-			'beta_recipient' => array( __( 'Beta requests go to', 'astrolabe' ), 'email', 'sanitize_email', '', __( 'Email that receives each beta request. Empty: the site administrator address.', 'astrolabe' ) ),
-			'footer_note'    => array( __( 'Footer note', 'astrolabe' ), 'text', 'sanitize_text_field', 'No ads. No tracking. No selling data.', __( 'Keep it true: change it if analytics with cookies is ever added.', 'astrolabe' ) ),
+			'app_url'       => array( __( 'App address', 'astrolabe' ), 'url', 'esc_url_raw', 'https://app.astrolabe.online', __( 'Sign in, "Start free trial" (/register) and the Terms / DPA links point here.', 'astrolabe' ) ),
+			'contact_email' => array( __( 'Contact email', 'astrolabe' ), 'email', 'sanitize_email', 'hello@astrolabe.online', __( 'Shown in the footer.', 'astrolabe' ) ),
+			'business'      => array( __( 'Business name (footer)', 'astrolabe' ), 'text', 'sanitize_text_field', '[Business name], Serbia', '' ),
+			'footer_note'   => array( __( 'Footer note', 'astrolabe' ), 'text', 'sanitize_text_field', 'No ads. No tracking. No selling data.', __( 'Keep it true: change it if analytics with cookies is ever added.', 'astrolabe' ) ),
 		);
 
 		foreach ( $fields as $key => list( $label, $type, $sanitize, $default, $description ) ) {

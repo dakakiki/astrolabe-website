@@ -1,6 +1,6 @@
 <?php
 /**
- * Pricing: the closed beta, and the planned plans (Site content → Plans).
+ * Pricing: the free trial, and the plans (Site content → Plans).
  *
  * @package AstroLabe
  */
@@ -9,6 +9,8 @@ defined( 'ABSPATH' ) || exit;
 
 $s     = astrolabe_section( 'pricing' );
 $plans = astrolabe_items( 'plan' );
+// When one plan has a tag, the others keep its space so the names stay in line.
+$tagged = (bool) array_filter( array_column( $plans, 'tag' ) );
 ?>
 <section class="section section-after" id="pricing">
 	<div class="wrap">
@@ -19,13 +21,13 @@ $plans = astrolabe_items( 'plan' );
 				<p><?php echo esc_html( $s['lede'] ); ?></p>
 			<?php endif; ?>
 		</div>
-		<div class="beta-banner">
+		<div class="trial-banner">
 			<?php echo astrolabe_mark(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			<div>
 				<h3><?php echo esc_html( $s['banner_title'] ); ?></h3>
 				<p><?php echo esc_html( $s['banner_text'] ); ?></p>
 			</div>
-			<a class="btn btn-primary" href="#beta"><?php echo esc_html( $s['banner_cta'] ); ?></a>
+			<a class="btn btn-primary" href="<?php echo esc_url( astrolabe_signup_url() ); ?>"><?php echo esc_html( $s['banner_cta'] ); ?></a>
 		</div>
 		<?php if ( $plans ) : ?>
 			<div class="plans">
@@ -33,6 +35,8 @@ $plans = astrolabe_items( 'plan' );
 					<div class="plan<?php echo $plan['featured'] ? ' featured' : ''; ?>">
 						<?php if ( $plan['tag'] ) : ?>
 							<span class="tag"><?php echo esc_html( $plan['tag'] ); ?></span>
+						<?php elseif ( $tagged ) : ?>
+							<span class="tag is-empty" aria-hidden="true">&nbsp;</span>
 						<?php endif; ?>
 						<h3><?php echo esc_html( $plan['title'] ); ?></h3>
 						<p class="for"><?php echo esc_html( $plan['for'] ); ?></p>

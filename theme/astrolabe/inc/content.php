@@ -168,7 +168,7 @@ add_action(
 			return;
 		}
 		$type = (string) $query->get( 'post_type' );
-		if ( str_starts_with( $type, 'astro_' ) && 'astro_beta_request' !== $type && ! $query->get( 'orderby' ) ) {
+		if ( str_starts_with( $type, 'astro_' ) && ! $query->get( 'orderby' ) ) {
 			$query->set( 'orderby', 'menu_order title' );
 			$query->set( 'order', 'ASC' );
 		}

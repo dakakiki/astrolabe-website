@@ -66,11 +66,10 @@ function astrolabe_mark( string $class = 'mark', string $label = '' ): string {
 /** A theme setting from the Customizer, with its default. */
 function astrolabe_setting( string $key ): string {
 	$defaults = array(
-		'app_url'        => 'https://app.astrolabe.online',
-		'contact_email'  => 'hello@astrolabe.online',
-		'business'       => '[Business name], Serbia',
-		'beta_recipient' => '',
-		'footer_note'    => 'No ads. No tracking. No selling data.',
+		'app_url'       => 'https://app.astrolabe.online',
+		'contact_email' => 'hello@astrolabe.online',
+		'business'      => '[Business name], Serbia',
+		'footer_note'   => 'No ads. No tracking. No selling data.',
 	);
 	$value = get_theme_mod( 'astrolabe_' . $key, $defaults[ $key ] ?? '' );
 	return is_string( $value ) ? $value : '';
@@ -79,6 +78,11 @@ function astrolabe_setting( string $key ): string {
 /** A page of the app, e.g. astrolabe_app_url( '/legal/terms' ). */
 function astrolabe_app_url( string $path = '' ): string {
 	return untrailingslashit( astrolabe_setting( 'app_url' ) ) . $path;
+}
+
+/** Where every "Start your free trial" button goes: the app's registration. */
+function astrolabe_signup_url(): string {
+	return astrolabe_app_url( '/register' );
 }
 
 /** The site's own privacy page if one is set, otherwise the app's. */

@@ -22,8 +22,8 @@ Statičan prototip sajta `astrolabe.online` i predlog logotipa. Bez servera i bu
 
 - **Jezik:** engleski, kao aplikacija za betu.
 - **Tema:** noć podrazumevano, dan kao u aplikaciji; isti tokeni, isti fontovi (Newsreader, Inter Tight, IBM Plex Mono) preko Bunny Fonts (EU, bez kolačića).
-- **Glavni poziv:** „Request a beta invite“ — registracija je samo na poziv; forma u prototipu ništa ne šalje.
-- **Cene:** prikazane kao *planirane* (19 / 29 / 49 EUR iz doc 07) uz napomenu da se potvrđuju posle bete; bez liste funkcija po paketu, jer granice paketa nisu odlučene.
+- **Glavni poziv:** „Request a beta invite“ — registracija je samo na poziv; forma u prototipu ništa ne šalje. *(Zastarelo od 13. 11. 2026: zatvorene bete nema; tema vodi na registraciju u aplikaciji sa trialom od 14 dana — vidi README teme, „Free trial“. Prototip ostaje kao zapis dizajna.)*
+- **Cene:** prikazane kao *planirane* (19 / 29 / 49 EUR iz doc 07) uz napomenu da se potvrđuju posle bete; bez liste funkcija po paketu, jer granice paketa nisu odlučene. *(U temi od 13. 11. 2026 bez oznake „Planned“; lista funkcija po paketu i dalje čeka odluku.)*
 - **Tvrdnje na sajtu** su samo ono što aplikacija već radi (Faze 4–8c2), plus „Hosted in the EU“ (potvrđeno 9. 10. 2026).
 - **Swiss Ephemeris** je pomenut samo imenom (dozvoljeno ugovorom); izdavač i autori biblioteke se ne pominju (tačka 9 ugovora).
 - **Uzorak karte** (Emma Clarke, maj 1991, Bristol) je izmišljen; položaji su zaokružene ilustracije, ne proračun.
@@ -39,7 +39,7 @@ Statičan prototip sajta `astrolabe.online` i predlog logotipa. Bez servera i bu
 ## Otvoreno
 
 - Adresa za kontakt (u prototipu `hello@astrolabe.online`) i naziv radnje u futeru (`[Business name]`) — u temi su to polja u Customizer-u.
-- Politika privatnosti samog sajta (forma za betu, analitika); dok je nema, link vodi na Privacy aplikacije.
+- Politika privatnosti samog sajta (analitika; forme za betu više nema); dok je nema, link vodi na Privacy aplikacije.
 - Analitika: preporuka Koko Analytics u režimu bez kolačića (vidi README teme).
 
 ## Urađeno posle izbora (9. 10. 2026)

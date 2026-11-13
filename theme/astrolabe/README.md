@@ -17,7 +17,6 @@ Repo: https://github.com/dakakiki/astrolabe-website (`theme/astrolabe`). Lokalni
 - Sve se vidi u **ACF → Field Groups** i **ACF → Post Types** i tamo se menja; ACF izmene upisuje nazad u `acf-json/` (`inc/acf.php` postavlja putanje).
 - Na drugoj instalaciji (npr. Hetzner): ACF pokaže *Sync available* — klik na Sync i polja/tipovi su u bazi.
 - Placeholder-i polja na početnoj su podrazumevani tekstovi iz `inc/defaults.php` (dodaju se pri prikazu forme).
-- **Beta requests** nisu ACF tip sadržaja: treba im pristup samo za administratora i bez „Add New“, a ACF ne podržava podešavanje prava (`capabilities`). Registrovani su u `inc/beta-requests.php`.
 
 ## Postavljanje na novoj instalaciji
 
@@ -25,7 +24,7 @@ Repo: https://github.com/dakakiki/astrolabe-website (`theme/astrolabe`). Lokalni
 2. **ACF → Field Groups / Post Types → Sync available → Sync.**
 3. Stranica „Home“ kao početna: Settings → Reading → *A static page*.
 4. **Site content → Create editable copies of the defaults** — funkcije, tačke privatnosti, paketi i pitanja postaju stavke koje se menjaju i ređaju (polje *Order*).
-5. **Appearance → Customize → AstroLabe:** adresa aplikacije, kontakt mejl, naziv radnje u futeru, kome idu prijave za betu, napomena u futeru.
+5. **Appearance → Customize → AstroLabe:** adresa aplikacije (na nju vode „Sign in“, „Start free trial“ → `/register` i pravni linkovi), kontakt mejl, naziv radnje u futeru, napomena u futeru.
 6. Po želji: Settings → Privacy (stranica politike privatnosti sajta; dok nije objavljena, linkovi vode na Privacy aplikacije), Settings → General (naziv i podnaslov sajta idu u naslov kartice).
 
 Lokalno je ovo već urađeno (9. 10. 2026): sync, „Home“ (ID 87) kao početna, 24 stavke.
@@ -42,18 +41,15 @@ Bez ACF-a sajt se i dalje prikazuje ceo, sa podrazumevanim tekstovima.
 | Meniji | Appearance → Menus: *Header* i *Footer — legal* (opciono) |
 | Obične stranice | Pages, šablon `page.php` sa tipografijom sajta |
 
-## Prijave za betu
+## Free trial (umesto prijave za betu, 13. 11. 2026)
 
-- Forma šalje na `admin-post.php` (`inc/beta-requests.php`), bez dodatka za forme.
-- Prijava je **privatni post** tipa *Beta requests* (samo administratori), sa statusom Novo / Pozvan / Kasnije / Ne sada, i ide **mejl** na adresu iz Customizer-a (ili na mejl administratora).
-- Spam: skriveno polje, najmanje 3 sekunde od otvaranja strane, najviše 5 prijava na sat sa jedne konekcije (bez nonce-a, jer bi u keširanoj strani istekao). Spam i prebrzo slanje dobijaju „hvala“, ali se ne čuvaju.
-- **GDPR:** Tools → Export / Erase Personal Data pronalaze prijave po mejlu; pristanak se beleži sa vremenom.
-- Poziv se i dalje šalje iz aplikacije (admin → Invitations ili `invitations:send`).
-- Mejl ide preko PHP `mail()`; na Hetzner Webhosting-u je pouzdaniji SMTP preko sandučeta domena (port 587, kao aplikacija).
+- Zatvorene bete nema: sva dugmad („Start your free trial“ u hero-u, ceni, sekciji *Free trial* i na kraju, „Start free trial“ u zaglavlju i futeru) vode na registraciju u aplikaciji — `astrolabe_signup_url()` = adresa aplikacije + `/register`.
+- Sekcija `#trial` (`template-parts/front/trial.php`, ACF tab *Free trial*) objašnjava trial: 14 dana bez kartice, do 5 klijenata, do 30 proračuna dnevno, portal i snimak karte uz paket; posle triala praksa samo za čitanje. **Tekst mora ostati u skladu sa pravilima u aplikaciji** (spec 07, „Trial“).
+- Forma za prijavu, tip sadržaja *Beta requests* (`inc/beta-requests.php`) i podešavanje „Beta requests go to“ su uklonjeni; sajt više ne prikuplja lične podatke.
 
 ## Analitika (bez banera za kolačiće)
 
-Preporuka: **Koko Analytics** u režimu **bez kolačića** — podaci ostaju u bazi sajta. Alternativa: Plausible (plaćen, EU). Ako se ikad doda analitika sa kolačićima, promeni napomenu „No tracking“ u Customizer-u. Politika privatnosti sajta treba da pomene analitiku i formu za betu.
+Preporuka: **Koko Analytics** u režimu **bez kolačića** — podaci ostaju u bazi sajta. Alternativa: Plausible (plaćen, EU). Ako se ikad doda analitika sa kolačićima, promeni napomenu „No tracking“ u Customizer-u. Politika privatnosti sajta treba da pomene analitiku (forme više nema).
 
 ## Logo i fontovi
 
@@ -67,17 +63,16 @@ Preporuka: **Koko Analytics** u režimu **bez kolačića** — podaci ostaju u b
 style.css              zaglavlje teme
 functions.php          učitava inc/*
 acf-json/              ACF grupe polja i tipovi sadržaja (Local JSON)
-inc/defaults.php       podrazumevani tekstovi (iz prototipa) i izbori u formi
+inc/defaults.php       podrazumevani tekstovi (iz prototipa, trial od 13. 11. 2026)
 inc/template-tags.php  pomoćne funkcije za šablone
 inc/setup.php          podrške teme, stilovi i skripte, ikonice, Customizer, meniji
 inc/content.php        meni „Site content“ i kopiranje podrazumevanih stavki
 inc/acf.php            putanje za acf-json, placeholder-i
-inc/beta-requests.php  prijave za betu
 front-page.php         početna: template-parts/front/*.php redom
 page.php, index.php, 404.php
 template-parts/sprites.php   znak i ikonice (inline SVG)
 assets/css/site.css    stilovi (tokeni iz aplikacije) + WordPress deo na kraju
 assets/css/editor.css  izgled teksta u editoru stranica
-assets/js/site.js      tema noć/dan, meni, točak karte, provera forme
+assets/js/site.js      tema noć/dan, meni, točak karte
 theme.json             paleta i fontovi u editoru (bez proizvoljnih boja)
 ```

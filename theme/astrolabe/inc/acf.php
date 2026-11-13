@@ -8,9 +8,6 @@
  * to acf-json/, so the structure travels with the theme. On another install,
  * ACF offers "Sync available" for anything newer in the files.
  *
- * Beta requests are not here: they need admin-only access and no "Add New",
- * which ACF post types cannot express (inc/beta-requests.php).
- *
  * @package AstroLabe
  */
 

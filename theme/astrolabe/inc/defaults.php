@@ -28,9 +28,9 @@ function astrolabe_defaults(): array {
 				'eyebrow'       => 'For professional astrologers',
 				'title'         => 'Open a client. <em>See everything.</em>',
 				'lede'          => "Birth data, the natal chart, today's transits, past consultations, notes, files, payments and what comes next — together in one workspace, so you start every reading prepared.",
-				'cta_primary'   => 'Request a beta invite',
+				'cta_primary'   => 'Start your free trial',
 				'cta_secondary' => "See what's inside",
-				'notes'         => "Free during the closed beta\nNo card needed\nHosted in the EU",
+				'notes'         => "14 days free\nNo card needed\nHosted in the EU",
 			),
 			'problem'  => array(
 				'eyebrow' => 'Why AstroLabe',
@@ -59,21 +59,21 @@ function astrolabe_defaults(): array {
 			),
 			'pricing'  => array(
 				'eyebrow'      => 'Pricing',
-				'title'        => 'Free while we <em>build it with you.</em>',
-				'lede'         => 'AstroLabe is in a closed beta with a small group of working astrologers. Paid plans start after the beta.',
-				'banner_title' => 'Closed beta — free, no card',
-				'banner_text'  => 'Use it with your real practice, tell us what is missing, and hear about plans before anyone else.',
-				'banner_cta'   => 'Request an invite',
-				'note'         => 'Indicative prices — confirmed with beta members before paid plans open. Every plan will start with a 14-day free trial.',
+				'title'        => 'Try it first. <em>Then choose a plan.</em>',
+				'lede'         => 'Every practice starts with 14 free days. Nothing is charged unless you choose a plan.',
+				'banner_title' => '14-day free trial — no card',
+				'banner_text'  => 'Work with up to 5 clients and see whether AstroLabe fits the way you work.',
+				'banner_cta'   => 'Start your free trial',
+				'note'         => 'Prices in euros. Monthly or yearly — the yearly plan costs about ten months.',
 			),
-			'beta'     => array(
-				'eyebrow'    => 'Closed beta',
-				'title'      => 'Help shape the tool <em>you will work in.</em>',
-				'text'       => 'We are inviting a small number of astrologers who see clients regularly. Tell us a little about your practice.',
-				'steps'      => "We read every request and reply personally, usually within a few days.\nYou get an invitation link to create your practice — free for the whole beta.\nA short call now and then, if you like: what works, what is missing, what is in the way.",
-				'submit'     => 'Request an invite',
-				'done_title' => 'Thank you — request received.',
-				'done_text'  => 'We will write to you personally, usually within a few days.',
+			'trial'    => array(
+				'eyebrow'    => 'Free trial',
+				'title'      => 'Try it with <em>your own practice.</em>',
+				'text'       => 'Create an account in a minute and work with AstroLabe for 14 days. No card, nothing to install.',
+				'steps'      => "Create your account with your email and a password, then confirm the address.\nFor 14 days, add up to 5 clients and work with their charts, transits, consultations, notes, calendar and payments.\nChoose a plan to carry on with everything you entered. Without one, nothing is charged: your practice stays readable and you can export all of it.",
+				'card_title' => '14 days, free',
+				'facts'      => "No card needed\nUp to 5 clients\nUp to 30 chart calculations a day\nClient portal and chart snapshots come with a plan",
+				'cta'        => 'Start your free trial',
 			),
 			'faq'      => array(
 				'eyebrow' => 'Questions',
@@ -81,8 +81,8 @@ function astrolabe_defaults(): array {
 			),
 			'closing'  => array(
 				'title' => 'Every client, <em>every chart,</em><br>in one place.',
-				'text'  => 'Join the closed beta and run your practice from a workspace made for astrologers.',
-				'cta'   => 'Request a beta invite',
+				'text'  => 'Start a free 14-day trial and run your practice from a workspace made for astrologers.',
+				'cta'   => 'Start your free trial',
 			),
 		),
 
@@ -108,15 +108,15 @@ function astrolabe_defaults(): array {
 		),
 
 		'plan'     => array(
-			array( 'title' => 'Solo', 'tag' => 'Planned', 'for' => 'For an astrologer working on their own.', 'price' => '€19', 'period' => '/ month', 'yearly' => 'or €190 a year', 'featured' => false ),
-			array( 'title' => 'Professional', 'tag' => 'Planned · most practices', 'for' => 'For an active practice with clients near and far.', 'price' => '€29', 'period' => '/ month', 'yearly' => 'or €290 a year', 'featured' => true ),
-			array( 'title' => 'Studio', 'tag' => 'Planned', 'for' => 'For several astrologers under one roof.', 'price' => '€49', 'period' => '/ month', 'yearly' => 'or €490 a year', 'featured' => false ),
+			array( 'title' => 'Solo', 'tag' => '', 'for' => 'For an astrologer working on their own.', 'price' => '€19', 'period' => '/ month', 'yearly' => 'or €190 a year', 'featured' => false ),
+			array( 'title' => 'Professional', 'tag' => 'Most practices', 'for' => 'For an active practice with clients near and far.', 'price' => '€29', 'period' => '/ month', 'yearly' => 'or €290 a year', 'featured' => true ),
+			array( 'title' => 'Studio', 'tag' => '', 'for' => 'For several astrologers under one roof.', 'price' => '€49', 'period' => '/ month', 'yearly' => 'or €490 a year', 'featured' => false ),
 		),
 
 		'faq'      => array(
 			array(
 				'title'  => 'Does AstroLabe replace my chart software?',
-				'answer' => '<p>For everyday client work it often can: natal charts, transits, synastry, composite charts and the sky calendar are all built in, next to the client they belong to.</p><p>It does not write interpretations, and some techniques — progressions and solar returns, for example — are not there yet. Tell us which ones you need; the beta decides what comes next.</p>',
+				'answer' => '<p>For everyday client work it often can: natal charts, transits, synastry, composite charts and the sky calendar are all built in, next to the client they belong to.</p><p>It does not write interpretations, and some techniques — progressions and solar returns, for example — are not there yet. Tell us which ones you need; what astrologers ask for decides what comes next.</p>',
 			),
 			array(
 				'title'  => 'Which traditions does it support?',
@@ -132,11 +132,11 @@ function astrolabe_defaults(): array {
 			),
 			array(
 				'title'  => 'Which languages?',
-				'answer' => '<p>English for now. More languages are planned — tell us yours when you request an invite.</p>',
+				'answer' => '<p>English for now. More languages are planned — tell us which one you need.</p>',
 			),
 			array(
-				'title'  => 'What will it cost after the beta?',
-				'answer' => '<p>The plans we have in mind start at €19 a month, or €190 a year. Prices are confirmed with beta members before any paid plan opens, and nobody is moved to a paid plan without asking.</p>',
+				'title'  => 'What happens when the trial ends?',
+				'answer' => '<p>Choose a plan — from €19 a month, or €190 a year — and carry on with everything you entered. If you do not, nothing is charged: you gave us no card. Your practice becomes read-only, so you can still sign in, look things up and export all of it, and choosing a plan later opens it again.</p>',
 			),
 		),
 
@@ -167,28 +167,6 @@ function astrolabe_defaults(): array {
 			array( 'icon' => 'plus', 'when' => '14 Aug', 'what' => 'Client added · chart calculated', 'more' => 'Placidus · Tropical · exact birth time' ),
 		),
 
-		// Beta form choices (value => label).
-		'practice' => array(
-			'solo'    => 'On my own',
-			'online'  => 'Online, with clients abroad',
-			'studio'  => 'In a studio with other astrologers',
-			'teacher' => 'I teach or mentor',
-		),
-		'volume'   => array(
-			'1-5'   => '1–5',
-			'6-20'  => '6–20',
-			'21-50' => '21–50',
-			'50+'   => 'More than 50',
-		),
-		'tradition' => array(
-			'western'       => 'Western',
-			'vedic'         => 'Vedic / Jyotish',
-			'hellenistic'   => 'Hellenistic',
-			'psychological' => 'Psychological',
-			'evolutionary'  => 'Evolutionary',
-			'horary'        => 'Horary & electional',
-			'other'         => 'Other',
-		),
 	);
 
 	return $defaults;
